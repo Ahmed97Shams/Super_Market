@@ -5,4 +5,23 @@
 }
 <h2>Show Groups</h2>
 <h3>count : @Model.AllGroups.Count</h3>
-
+<a class="btn btn-info" asp-page="Create">Create New Group</a>
+<div class="container">         
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th>رقم المجموعة</th>
+        <th>إسم المجموعة</th>
+      </tr>
+    </thead>
+    <tbody>
+        @foreach (var Group in Model.AllGroups)
+        {
+      <tr>
+        <td>@Group.Id</td>
+        <td>@Group.GroupName</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>

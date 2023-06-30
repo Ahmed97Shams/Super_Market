@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SUPER_MARKET.Models
+namespace Super_Market.Models
 {
-    public class Groups_class
+    public class Groups_Class
     {
         public int Id { get; set; }
         public string GroupName { get; set; }

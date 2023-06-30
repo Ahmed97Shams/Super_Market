@@ -8,7 +8,7 @@ using Super_Market.Models;
 
 namespace Super_Market.Pages.Groups;
 
-public class ShowGroups : PageModel
+public class Create : PageModel
 {
     // private readonly ILogger<ShowGroups> _logger;
 
@@ -16,16 +16,9 @@ public class ShowGroups : PageModel
     // {
     //     _logger = logger;
     // }
-    public List<Groups_Class> AllGroups {get; set;}
-
-    private readonly Group_Method g_Method;
-
-    public ShowGroups(Group_Method G_Method)
-    {
-        g_Method = G_Method; 
-    }
+    
     public void OnGet()
     {
-        AllGroups = g_Method.GetAllGroups();
+        
     }
 }
